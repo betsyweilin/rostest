@@ -1,0 +1,11 @@
+<!-- NOTE: this requires that you 'rosmake roscpp_tutorials' -->
+<launch>
+  <!-- local machine already has a definition by default.
+       This tag overrides the default definition with
+       specific ROS_ROOT and ROS_PACKAGE_PATH values -->
+  <machine name="shunya" address="192.168.10.157" user="shunya" default="true"    env-loader="/home/shunya/setup.sh"  />
+  <!-- node name="a2i_server" pkg="roscpp" type="msg_gen.py" machine="shunya"  / -->
+  <!--test test-name="add_two_ints" pkg="rospy_tutorials" type="listener.py" machine="shunya" / -->
+   <node pkg="rospy_tutorials" type="listener" name="talker"  respawn="true" />
+
+</launch>

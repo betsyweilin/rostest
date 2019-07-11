@@ -1,0 +1,4 @@
+<!-- NOTE: this requires that you 'rosmake roscpp_tutorials' -->
+<launch>
+  <node name="talker" pkg="beginner" type="talker.py" />
+</launch>
